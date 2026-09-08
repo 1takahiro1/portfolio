@@ -1,0 +1,5 @@
+Mode: Built-in image_gen / compositing
+Inputs: User-supplied 1.png and 2.png
+Output: palmu-ranking-thumbnail.png
+
+Use case: compositing. Create a polished 16:9 landscape portfolio project thumbnail, 1600x900 or higher same aspect. Use both supplied phone mockup images: image 1 ranking categories screen, image 2 ranking podium screen. Preserve their actual screen designs, Japanese text, avatars, phone proportions and black device frames faithfully; do not redesign UI. Compose two large front-facing upright phones side by side near center, with a subtle stagger (left slightly lower, right slightly higher), fully within the frame and generous balanced margins. Each phone height about 80% of canvas, no overlap covering screen content. Background very pale blush pink sampled from the screen, almost white, with very subtle soft pink lighting and soft realistic contact shadows below phones. Refined minimal Japanese UI designer portfolio presentation, clean flat studio backdrop. No extra text, no headings, no badges, no decorative objects, no additional screens, no watermark. Main focus is the two authentic app interfaces, highly legible.
