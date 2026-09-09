@@ -1,9 +1,0 @@
-{
-  "name": "portfolio-v7-recreation",
-  "private": true,
-  "version": "1.0.0",
-  "description": "Editable static HTML, CSS and JavaScript portfolio",
-  "scripts": {
-    "dev": "python3 server.py"
-  }
-}
