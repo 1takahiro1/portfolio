@@ -1,0 +1,5 @@
+Mode: Built-in image_gen / compositing
+Inputs: User-supplied 1.png, revised 2.png, 3.png
+Output: palmu-onboarding-thumbnail.png
+
+Use case: compositing. Create a polished 16:9 landscape portfolio thumbnail, around 1672x941. Use the three attached onboarding UI screenshots in order left to right: STEP 1 profile, STEP 2 interests showing travel photographs, STEP 3 desired experience. Image 1 and 3 already have black iPhone frames; add a matching black iPhone frame around image 2. Preserve the actual supplied screens, Japanese wording, photos, orange buttons and layout faithfully, no redesign. Three equally sized upright front-facing phones, fully visible, evenly spaced, centered with generous margins. Phone height about 82 percent of canvas. Middle phone very slightly higher. Pale warm cream/apricot almost-white studio background with soft restrained shadows underneath. Minimal refined UI designer portfolio presentation matching a companion thumbnail of two black phones on a pale blush background. No added text, arrows, badges, props, watermark or extra screens.
