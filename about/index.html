@@ -3,116 +3,25 @@
 <html lang="ja">
 
 <head>
-    <!-- Google tag (gtag.js) -->
+    
     <meta charset="UTF-8">
     <meta name="description" content="Takahiro.Yのポートフォリオ。制作実績や自主制作、日々の技術探求をご紹介します。">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=5">
     <title>私について｜Takahiro.Y</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/custom.css">
-    <script defer src="../js/app.js">
-    </script>
+    <link rel="stylesheet" href="../css/site.css">
+    
 </head>
 
-<body data-barba="wrapper" aria-live="polite">
-    <div class="c-loading">
-        <p class="c-loading__text"><span>私</span><span>に</span><span>つ</span><span>い</span><span>て</span></p>
-        <div class="c-loading__top">
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-        </div>
-        <div class="c-loading__bottom">
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-        </div>
-    </div>
-
-    <!-- 編集: ロゴ名とナビゲーション -->
-    <header class="l-header">
-        <div class="l-header__inner">
-            <a href="../index.html" class="l-header__logo">Takahiro.Y</a>
-            <nav class="l-header__nav" aria-label="メインナビゲーション">
-                <ul class="l-header__ul">
-                    <li class="l-header__list" data-nav="about">
+<body>
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a href="../index.html" class="site-header__logo">Takahiro.Y</a>
+            <nav class="site-header__nav" aria-label="メインナビゲーション">
+                <ul class="site-header__links">
+                    <li class="site-header__item" data-nav="about">
                         <a href="index.html">私について</a>
                     </li>
-                    <li class="l-header__list" data-nav="selected">
+                    <li class="site-header__item" data-nav="selected">
                         <a href="../selected/index.html">制作実績</a>
                     </li>
 
@@ -121,49 +30,49 @@
             </nav>
         </div>
     </header>
-    <div data-barba="container" data-barba-namespace="about">
+    <div data-page-root data-page="about">
         <main class="main">
-            <div class="p-about profile-page">
+            <div class="about-page profile-page">
 
-                <section class="p-about-head">
-                    <div class="p-about-head__flex">
-                        <div class="p-about-head__box">
-                            <h1 class="p-about-head__title u-medium">私について</h1>
+                <section class="profile-intro">
+                    <div class="profile-intro__flex">
+                        <div class="profile-intro__box">
+                            <h1 class="profile-intro__title text-medium">私について</h1>
                             <p class="profile-head-name">吉野 貴大 <span>Takahiro Yoshino</span></p>
-                            <p class="p-about-head__text">
+                            <p class="profile-intro__text">
                                 UI／Webデザイナーとして、課題整理・情報設計からUIデザイン、実装支援まで一貫して取り組んでいます。<br>ユーザーの声と事業の目的をつなぎ、「これからの当たり前」をつくるデザインを目指しています。
                             </p>
-                            <p class="p-about-head__scroll">スクロールして見る</p>
+                            <p class="profile-intro__scroll">スクロールして見る</p>
                         </div>
-                        <div class="p-about-head__image">
+                        <div class="profile-intro__image">
                             <img src="../images/about/top.PNG" alt="草花のメインビジュアル">
                         </div>
                     </div>
                 </section>
 
-                <section class="p-about-main">
-                    <div class="p-about-main__inner">
-                        <div class="p-about-main__left">
+                <section class="profile-content">
+                    <div class="profile-content__inner">
+                        <div class="profile-content__left">
                             <img src="../images/about/takahiro-yoshino.jpg" alt="吉野貴大のプロフィール写真">
                         </div>
-                        <div class="p-about-main__right">
+                        <div class="profile-content__right">
                             <!-- 編集: プロフィール・経歴・スキルはこのHTMLの文章を変更してください。 -->
-                            <section class="p-about-main__item">
-                                <h2 class="p-about-main__item-title">プロフィール</h2>
-                                <p class="p-about-main__item-text">吉野 貴大（よしの たかひろ）<br>UI／Webデザイナー</p>
-                                <p class="p-about-main__item-text">
+                            <section class="profile-content__item">
+                                <h2 class="profile-content__item-title">プロフィール</h2>
+                                <p class="profile-content__item-text">吉野 貴大（よしの たかひろ）<br>UI／Webデザイナー</p>
+                                <p class="profile-content__item-text">
                                     HAL大阪を卒業後、アジアクエスト株式会社で業務システムやアプリのUIデザイン、要件定義、顧客との仕様調整を担当しました。現在は株式会社Lightで、一人目の正社員UIデザイナーとして、ライブ配信サービス「Palmu」のUIデザイン全般とデザインシステムの構築を主導しています。
                                 </p>
                             </section>
-                            <section class="p-about-main__item">
-                                <h2 class="p-about-main__item-title">大切にしていること</h2>
-                                <p class="p-about-main__item-text">「これからの当たり前をつくるデザイナー」</p>
-                                <p class="p-about-main__item-text">
+                            <section class="profile-content__item">
+                                <h2 class="profile-content__item-title">大切にしていること</h2>
+                                <p class="profile-content__item-text">「これからの当たり前をつくるデザイナー」</p>
+                                <p class="profile-content__item-text">
                                     技術と人々のニーズをつなぎ、日常をより良くするデザインを追求しています。ユーザーが迷う理由を整理し、チームと認識をそろえながら、使いやすさと実現性を両立させることを大切にしています。
                                 </p>
                             </section>
-                            <section class="p-about-main__item">
-                                <h2 class="p-about-main__item-title">得意なこと</h2>
+                            <section class="profile-content__item">
+                                <h2 class="profile-content__item-title">得意なこと</h2>
                                 <dl class="profile-strengths">
                                     <dt>課題整理からUI設計まで</dt>
                                     <dd>現状分析やユーザーリサーチをもとに課題を整理し、情報設計・画面設計まで一貫して担当。ランキング刷新やオンボーディング改善に取り組んできました。</dd>
@@ -175,8 +84,8 @@
                                     </dd>
                                 </dl>
                             </section>
-                            <section class="p-about-main__item">
-                                <h2 class="p-about-main__item-title">職歴</h2>
+                            <section class="profile-content__item">
+                                <h2 class="profile-content__item-title">職歴</h2>
                                 <ol class="profile-history">
                                     <li>
                                         <p class="profile-period">2024年9月〜現在</p>
@@ -201,14 +110,14 @@
                                     </li>
                                 </ol>
                             </section>
-                            <section class="p-about-main__item">
-                                <h2 class="p-about-main__item-title">学歴・受賞歴</h2>
-                                <p class="p-about-main__item-text">2019年4月〜2023年3月<br>HAL大阪 高度情報学科 WEB開発専攻</p>
-                                <p class="p-about-main__item-text">卒業制作「Drop
+                            <section class="profile-content__item">
+                                <h2 class="profile-content__item-title">学歴・受賞歴</h2>
+                                <p class="profile-content__item-text">2019年4月〜2023年3月<br>HAL大阪 高度情報学科 WEB開発専攻</p>
+                                <p class="profile-content__item-text">卒業制作「Drop
                                     Go」でPM兼デザイナーを担当。地域の活性化を目指すサービスをチームで企画・開発し、朝日新聞社賞を受賞しました。</p>
                             </section>
-                            <section class="p-about-main__item">
-                                <h2 class="p-about-main__item-title">スキル・ツール</h2>
+                            <section class="profile-content__item">
+                                <h2 class="profile-content__item-title">スキル・ツール</h2>
                                 <ul class="profile-skills">
                                     <li><span>Figma</span><span>5年以上</span></li>
                                     <li><span>Adobe XD</span><span>5年以上</span></li>
@@ -218,8 +127,8 @@
                                 </ul>
                                 <p class="profile-note">経験年数は2026年9月の職務経歴書に基づき、インターン期間を含みます。</p>
                             </section>
-                            <section class="p-about-main__item">
-                                <h2 class="p-about-main__item-title">資格</h2>
+                            <section class="profile-content__item">
+                                <h2 class="profile-content__item-title">資格</h2>
                                 <ul class="profile-qualifications">
                                     <li>2021年3月　基本情報技術者試験 合格</li>
                                     <li>2019年12月　Webデザイナー検定ベーシック 合格</li>
@@ -227,9 +136,9 @@
                                     <li>2018年7月　ビジネス文書実務検定2級 合格</li>
                                 </ul>
                             </section>
-                            <section class="p-about-main__item">
-                                <h2 class="p-about-main__item-title">お問い合わせ</h2>
-                                <p class="p-about-main__item-text"><a
+                            <section class="profile-content__item">
+                                <h2 class="profile-content__item-title">お問い合わせ</h2>
+                                <p class="profile-content__item-text"><a
                                         href="mailto:yoshino.takahiro01@gmail.com">yoshino.takahiro01@gmail.com</a></p>
                                 <a class="profile-work-link" href="../selected/index.html">制作実績を見る →</a>
                             </section>
@@ -239,37 +148,37 @@
             </div>
 
             <!-- 編集: メールアドレス・SNS・フッター見出し -->
-            <footer class="l-footer">
-                <div class="l-footer__grid">
-                    <ul class="l-footer__ul l-footer__ul01">
-                        <li class="l-footer__li-main">お問い合わせ</li>
-                        <li class="l-footer__mail">
+            <footer class="site-footer">
+                <div class="site-footer__content">
+                    <ul class="site-footer__group site-footer__contact">
+                        <li class="site-footer__label">お問い合わせ</li>
+                        <li class="site-footer__email">
                             <a href="mailto:yoshino.takahiro01@gmail.com">yoshino.takahiro01@gmail.com</a>
                         </li>
                     </ul>
-                    <ul class="l-footer__ul l-footer__ul02">
-                        <li class="l-footer__li-main">メニュー</li>
-                        <li class="l-footer__li">
+                    <ul class="site-footer__group site-footer__navigation">
+                        <li class="site-footer__label">メニュー</li>
+                        <li class="site-footer__item">
                             <a href="../index.html">トップ</a>
                         </li>
-                        <li class="l-footer__li">
+                        <li class="site-footer__item">
                             <a href="index.html">私について</a>
                         </li>
-                        <li class="l-footer__li">
+                        <li class="site-footer__item">
                             <a href="../selected/index.html">制作実績</a>
                         </li>
 
                     </ul>
                 </div>
-                <p class="l-footer__big-type">portfolio</p>
+                <p class="site-footer__wordmark">portfolio</p>
             </footer>
         </main>
     </div>
-    <div class="transition-filter">
-    </div>
+    
     <script defer src="../js/ripple-texture.js"></script>
     <script defer src="../js/ripple-hero.js"></script>
-    <script defer src="../js/animation-runtime.js">
+    <script defer src="../js/scroll-motion.js"></script>
+<script defer src="../js/site.js">
     </script>
 </body>
 

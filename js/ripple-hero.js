@@ -9,10 +9,12 @@
   window.stopRippleHero = () => stop();
   window.startRippleHero = () => {
     stop();
-    const host = document.querySelector('.p-home-mv__background #webgl');
+    const host = document.querySelector('.hero__background #water-surface');
     if (!host) return;
     const canvas = document.createElement('canvas');
     canvas.setAttribute('aria-hidden', 'true');
+    // テクスチャの準備まではCSSの背景を見せ、黒い画面を挟まない。
+    canvas.style.opacity = '0';
     host.replaceChildren(canvas);
     const gl = canvas.getContext('webgl', { alpha: false, antialias: false, powerPreference: 'low-power' });
     if (!gl) { canvas.remove(); return; }
@@ -93,7 +95,7 @@
       const rect=host.getBoundingClientRect(); const dpr=Math.min(devicePixelRatio||1,1.5);
       canvas.width=Math.max(1,Math.round(rect.width*dpr)); canvas.height=Math.max(1,Math.round(rect.height*dpr));
       gl.viewport(0,0,canvas.width,canvas.height); gl.uniform2f(uniform('size'),rect.width,rect.height);
-      if(ready && motion.matches) draw();
+      if(ready) draw();
     }
     function draw(){
       if(disposed || !ready) return;
@@ -127,7 +129,7 @@
       lastPointer=timestamp; const r=host.getBoundingClientRect();
       addWave((event.clientX-r.left)/r.width,(event.clientY-r.top)/r.height,now());
     }
-    const hero=host.closest('.p-home-mv');
+    const hero=host.closest('.hero');
     hero.addEventListener('pointermove',pointer,{passive:true}); hero.addEventListener('pointerdown',pointer,{passive:true});
     const ro=new ResizeObserver(resize); ro.observe(host);
     const io=new IntersectionObserver(entries=>{active=entries[0].isIntersecting;resume();}); io.observe(hero);
@@ -135,7 +137,8 @@
     const img=new Image();
     img.onload=()=>{if(disposed)return; gl.bindTexture(gl.TEXTURE_2D,texture);
       gl.texImage2D(gl.TEXTURE_2D,0,gl.RGB,gl.RGB,gl.UNSIGNED_BYTE,img);
-      gl.uniform2f(uniform('imageSize'),img.naturalWidth,img.naturalHeight); ready=true; resize(); resume();};
+      gl.uniform2f(uniform('imageSize'),img.naturalWidth,img.naturalHeight); ready=true; resize(); draw(); canvas.style.opacity='1'; resume();};
+    img.onerror=()=>{ canvas.remove(); };
     img.src=window.portfolioRippleTexture || new URL('images/home/ripple-grid.png',window.portfolioRootURL).href;
     stop=()=>{disposed=true;cancelAnimationFrame(frame);ro.disconnect();io.disconnect();
       hero.removeEventListener('pointermove',pointer);hero.removeEventListener('pointerdown',pointer);

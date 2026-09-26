@@ -3,117 +3,25 @@
 <html lang="ja">
 
 <head>
-    <!-- Google tag (gtag.js) -->
+    
     <meta charset="UTF-8">
     <meta name="description" content="Takahiro.Yのポートフォリオ。制作実績や自主制作、日々の技術探求を">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=5">
     <title>Takahiro.Y</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/custom.css">
-    <script defer src="js/app.js">
-    </script>
+    <link rel="stylesheet" href="css/site.css">
+    
 </head>
 
-<body data-barba="wrapper" aria-live="polite">
-    <div class="c-loading">
-        <p class="c-loading__text"><span>は</span><span>じ</span><span>め</span><span>ま</span><span>し</span><span>て</span>
-        </p>
-        <div class="c-loading__top">
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-        </div>
-        <div class="c-loading__bottom">
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-            <div class="c-loading__line">
-            </div>
-        </div>
-    </div>
-
-    <!-- 編集: ロゴ名とナビゲーション -->
-    <header class="l-header">
-        <div class="l-header__inner">
-            <a href="index.html" class="l-header__logo">Takahiro.Y</a>
-            <nav class="l-header__nav" aria-label="メインナビゲーション">
-                <ul class="l-header__ul">
-                    <li class="l-header__list" data-nav="about">
+<body>
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a href="index.html" class="site-header__logo">Takahiro.Y</a>
+            <nav class="site-header__nav" aria-label="メインナビゲーション">
+                <ul class="site-header__links">
+                    <li class="site-header__item" data-nav="about">
                         <a href="about/index.html">私について</a>
                     </li>
-                    <li class="l-header__list" data-nav="selected">
+                    <li class="site-header__item" data-nav="selected">
                         <a href="selected/index.html">制作実績</a>
                     </li>
 
@@ -121,190 +29,189 @@
             </nav>
         </div>
     </header>
-    <div data-barba="container" data-barba-namespace="home">
+    <div data-page-root data-page="home">
         <main class="main">
-            <div class="p-home">
+            <div class="home-page">
 
-                <!-- 編集: メイン見出し・ShowReel動画 -->
-                <section class="p-home-mv">
-                    <div class="p-home-mv__box">
-                        <div class="p-home-mv__scroll">
+                <!-- 編集: メイン見出し -->
+                <section class="hero">
+                    <div class="hero__content">
+                        <div class="hero__scroll">
                             <p>スクロールして見る</p>
                         </div>
                     </div>
-                    <div class="p-home-mv__grid">
-                        <h1 class="p-home-mv__title">
-                            <span class="p-home-mv__title-text01 u-medium" data-page-title aria-hidden="true">DESIGN PORTFOLIO</span>
-                            <span class="p-home-mv__title-text02 u-medium" data-page-title02
+                    <div class="hero__layout">
+                        <h1 class="hero__title">
+                            <span class="hero__eyebrow text-medium" aria-hidden="true">DESIGN PORTFOLIO</span>
+                            <span class="hero__headline text-medium"
                                 aria-hidden="true">デザインの思考と、</span>
-                            <span class="p-home-mv__title-text02 u-medium" data-page-title02
+                            <span class="hero__headline text-medium"
                                 aria-hidden="true">かたちにした実績。</span>
 
-                            <span class="u-sr">吉野貴大のデザインポートフォリオ。デザインの思考と、かたちにした実績。</span>
+                            <span class="sr-only">吉野貴大のデザインポートフォリオ。デザインの思考と、かたちにした実績。</span>
                         </h1>
                         <p class="hero-introduction">UI／Webデザイナー 吉野貴大のポートフォリオ。<br>情報設計からUIデザイン、デザインシステムまで。</p>
                     </div>
                     <p class="hero-signature">吉野 貴大 <span>Takahiro Yoshino</span></p>
-                    <div class="p-home-mv__background">
-                        <!-- <img src="images/home/mv-image-sp.webp" alt="メインビジュアルの背景"> -->
-                        <div id="webgl">
+                    <div class="hero__background">
+                        <div id="water-surface">
                         </div>
                     </div>
                 </section>
 
                 <!-- 編集: 作品名・説明・画像・詳細リンク -->
-                <section class="p-home-selected">
-                    <div class="p-home-selected__inner">
-                        <div class="p-home-selected__head">
-                            <h2 class="c-title">
-                                <span class="c-title-number">01 / WORKS</span>
-                                <span class="c-title-main u-medium">制作実績</span>
+                <section class="featured-work">
+                    <div class="featured-work__inner">
+                        <div class="featured-work__heading">
+                            <h2 class="section-heading">
+                                <span class="section-heading-label">01 / WORKS</span>
+                                <span class="section-heading-text text-medium">制作実績</span>
                             </h2>
-                            <div class="p-home-selected__read" data-text-container>
-                                <p class="p-home-selected__read-text" aria-hidden="true">
-                                    <span data-text-hide>
-                                        <span data-text-show>実際に担当した実績の中から、</span>
+                            <div class="featured-work__intro">
+                                <p class="featured-work__description" aria-hidden="true">
+                                    <span>
+                                        <span>実際に担当した実績の中から、</span>
                                     </span>
-                                    <span data-text-hide>
-                                        <span data-text-show>思い入れのある作品をご紹介します。</span>
+                                    <span>
+                                        <span>思い入れのある作品をご紹介します。</span>
                                     </span>
                                 </p>
-                                <span class="u-sr">実際に担当した実績の中から、思い入れのある作品をご紹介します。</span>
+                                <span class="sr-only">実際に担当した実績の中から、思い入れのある作品をご紹介します。</span>
                             </div>
                         </div>
                         <section class="portfolio-work-group" aria-labelledby="work-group-0">
-                            <h2 class="c-title portfolio-group-title" id="work-group-0"><span
-                                    class="c-title-main u-medium">株式会社Lightでの制作実績</span></h2>
-                            <div class="p-home-selected__items">
+                            <h2 class="section-heading portfolio-group-title" id="work-group-0"><span
+                                    class="section-heading-text text-medium">株式会社Lightでの制作実績</span></h2>
+                            <div class="work-list">
                                 <!-- 編集: Palmu｜ランキング刷新プロジェクト -->
-                                <article class="p-home-selected__item portfolio-work">
-                                    <a class="p-home-selected__item-image" href="selected/palmu-ranking/index.html"
+                                <article class="work-card portfolio-work">
+                                    <a class="work-card__visual" href="selected/palmu-ranking/index.html"
                                         aria-label="Palmu｜ランキング刷新プロジェクトの詳細を見る"><img
                                             src="images/works/palmu-ranking-thumbnail.png"
                                             alt="Palmuのランキング一覧と上位入賞者の表彰台UI" width="1672" height="941"
                                             loading="lazy"></a>
-                                    <div class="p-home-selected__item-box">
+                                    <div class="work-card__content">
                                         <p class="portfolio-work-role">情報設計・UIデザイン・既存画面の改善</p>
-                                        <h3 class="p-home-selected__item-title">Palmu｜ランキング刷新プロジェクト</h3>
-                                        <p class="p-home-selected__item-text">
+                                        <h3 class="work-card__title">Palmu｜ランキング刷新プロジェクト</h3>
+                                        <p class="work-card__description">
                                             あらゆるレベルの配信者が活躍できるランキングへ刷新。ランク・配信者属性ごとの分類や色分け、上位入賞者の表彰台UIを設計しました。</p>
-                                        <div class="p-home-selected__item-button"><a
-                                                href="selected/palmu-ranking/index.html" class="c-link-button"><span
-                                                    class="c-link-button__text">詳しく見る</span><span
-                                                    class="c-link-button__round">→</span></a></div>
+                                        <div class="work-card__action"><a
+                                                href="selected/palmu-ranking/index.html" class="detail-link"><span
+                                                    class="detail-link__text">詳しく見る</span><span
+                                                    class="detail-link__round">→</span></a></div>
                                     </div>
                                 </article>
                                 <!-- 編集: Palmu｜オンボーディングのリニューアル -->
-                                <article class="p-home-selected__item portfolio-work">
-                                    <a class="p-home-selected__item-image" href="selected/palmu-onboarding/index.html"
+                                <article class="work-card portfolio-work">
+                                    <a class="work-card__visual" href="selected/palmu-onboarding/index.html"
                                         aria-label="Palmu｜オンボーディングのリニューアルの詳細を見る"><img
                                             src="images/works/palmu-onboarding-thumbnail.png"
                                             alt="Palmuのプロフィール設定・興味選択・利用目的を選ぶ3ステップのUI" width="1672" height="941"
                                             loading="lazy"></a>
-                                    <div class="p-home-selected__item-box">
+                                    <div class="work-card__content">
                                         <p class="portfolio-work-role">情報設計・UIデザイン・既存画面の改善</p>
-                                        <h3 class="p-home-selected__item-title">Palmu｜オンボーディングのリニューアル</h3>
-                                        <p class="p-home-selected__item-text">
+                                        <h3 class="work-card__title">Palmu｜オンボーディングのリニューアル</h3>
+                                        <p class="work-card__description">
                                             登録直後から好みの配信枠へたどり着ける導線を設計。入力項目の整理、進捗表示、興味関心を直感的に選ぶUIで、初回体験を見直しました。</p>
-                                        <div class="p-home-selected__item-button"><a
-                                                href="selected/palmu-onboarding/index.html" class="c-link-button"><span
-                                                    class="c-link-button__text">詳しく見る</span><span
-                                                    class="c-link-button__round">→</span></a></div>
+                                        <div class="work-card__action"><a
+                                                href="selected/palmu-onboarding/index.html" class="detail-link"><span
+                                                    class="detail-link__text">詳しく見る</span><span
+                                                    class="detail-link__round">→</span></a></div>
                                     </div>
                                 </article>
                                 <!-- 編集: デザインシステムの構築・ガイドラインの作成 -->
-                                <article class="p-home-selected__item portfolio-work">
-                                    <a class="p-home-selected__item-image" href="selected/design-system/index.html"
+                                <article class="work-card portfolio-work">
+                                    <a class="work-card__visual" href="selected/design-system/index.html"
                                         aria-label="デザインシステムの構築・ガイドラインの作成の詳細を見る"><img
                                             src="images/works/design-system-thumbnail.png"
                                             alt="色・文字・UI部品を共通化し画面へ展開するデザインシステムのイメージ" width="1672" height="941"
                                             loading="lazy"></a>
-                                    <div class="p-home-selected__item-box">
+                                    <div class="work-card__content">
                                         <p class="portfolio-work-role">デザインシステム設計・コンポーネント整備・ガイドライン作成</p>
-                                        <h3 class="p-home-selected__item-title">デザインシステムの構築・ガイドラインの作成</h3>
-                                        <p class="p-home-selected__item-text">
+                                        <h3 class="work-card__title">デザインシステムの構築・ガイドラインの作成</h3>
+                                        <p class="work-card__description">
                                             UIの一貫性と制作効率の向上を目指し、デザインシステムを構築。主要コンポーネント30種類以上、100以上のバリアントを整備しました。</p>
-                                        <div class="p-home-selected__item-button"><a
-                                                href="selected/design-system/index.html" class="c-link-button"><span
-                                                    class="c-link-button__text">詳しく見る</span><span
-                                                    class="c-link-button__round">→</span></a></div>
+                                        <div class="work-card__action"><a
+                                                href="selected/design-system/index.html" class="detail-link"><span
+                                                    class="detail-link__text">詳しく見る</span><span
+                                                    class="detail-link__round">→</span></a></div>
                                     </div>
                                 </article>
                                 <!-- 編集: バナー・イベントLP・Webサイトの作成 -->
-                                <article class="p-home-selected__item portfolio-work">
-                                    <a class="p-home-selected__item-image" href="selected/banners-web/index.html"
+                                <article class="work-card portfolio-work">
+                                    <a class="work-card__visual" href="selected/banners-web/index.html"
                                         aria-label="バナー・イベントLP・Webサイトの作成の詳細を見る"><img src="images/works/pdf-29.jpg"
                                             alt="バナー・イベントLP・Webサイトの作成の制作実績" width="1600" height="900"
                                             loading="lazy"></a>
-                                    <div class="p-home-selected__item-box">
+                                    <div class="work-card__content">
                                         <p class="portfolio-work-role">バナーデザイン・イベントLP・Webサイト制作</p>
-                                        <h3 class="p-home-selected__item-title">バナー・イベントLP・Webサイトの作成</h3>
-                                        <p class="p-home-selected__item-text">
+                                        <h3 class="work-card__title">バナー・イベントLP・Webサイトの作成</h3>
+                                        <p class="work-card__description">
                                             Palmuのバナー、イベントLP、Webサイトの制作実績を掲載。各施策に合わせたビジュアルと情報の見せ方をデザインしました。</p>
-                                        <div class="p-home-selected__item-button"><a
-                                                href="selected/banners-web/index.html" class="c-link-button"><span
-                                                    class="c-link-button__text">詳しく見る</span><span
-                                                    class="c-link-button__round">→</span></a></div>
+                                        <div class="work-card__action"><a
+                                                href="selected/banners-web/index.html" class="detail-link"><span
+                                                    class="detail-link__text">詳しく見る</span><span
+                                                    class="detail-link__round">→</span></a></div>
                                     </div>
                                 </article>
                             </div>
                         </section>
                         <section class="portfolio-work-group" aria-labelledby="work-group-4">
-                            <h2 class="c-title portfolio-group-title" id="work-group-4"><span
-                                    class="c-title-main u-medium">アジアクエスト株式会社での制作実績</span></h2>
-                            <div class="p-home-selected__items">
+                            <h2 class="section-heading portfolio-group-title" id="work-group-4"><span
+                                    class="section-heading-text text-medium">アジアクエスト株式会社での制作実績</span></h2>
+                            <div class="work-list">
                                 <!-- 編集: 楽天ステイ -->
-                                <article class="p-home-selected__item portfolio-work">
-                                    <a class="p-home-selected__item-image" href="selected/rakuten-stay/index.html"
+                                <article class="work-card portfolio-work">
+                                    <a class="work-card__visual" href="selected/rakuten-stay/index.html"
                                         aria-label="楽天ステイの詳細を見る"><img src="images/works/pdf-33.jpg" alt="楽天ステイの制作実績"
                                             width="1600" height="900" loading="lazy"></a>
-                                    <div class="p-home-selected__item-box">
+                                    <div class="work-card__content">
                                         <p class="portfolio-work-role">UIデザイン作成・要件定義</p>
-                                        <h3 class="p-home-selected__item-title">楽天ステイ</h3>
-                                        <p class="p-home-selected__item-text">全国のRakuten
+                                        <h3 class="work-card__title">楽天ステイ</h3>
+                                        <p class="work-card__description">全国のRakuten
                                             STAY施設の検索・宿泊予約ができるアプリ。特徴的な設備から施設を絞り込める、iOS・Android向けのUIデザインと要件定義を担当しました。</p>
-                                        <div class="p-home-selected__item-button"><a
-                                                href="selected/rakuten-stay/index.html" class="c-link-button"><span
-                                                    class="c-link-button__text">詳しく見る</span><span
-                                                    class="c-link-button__round">→</span></a></div>
+                                        <div class="work-card__action"><a
+                                                href="selected/rakuten-stay/index.html" class="detail-link"><span
+                                                    class="detail-link__text">詳しく見る</span><span
+                                                    class="detail-link__round">→</span></a></div>
                                     </div>
                                 </article>
                                 <!-- 編集: 3DKフィールド -->
-                                <article class="p-home-selected__item portfolio-work">
-                                    <a class="p-home-selected__item-image" href="selected/3dk-field/index.html"
+                                <article class="work-card portfolio-work">
+                                    <a class="work-card__visual" href="selected/3dk-field/index.html"
                                         aria-label="3DKフィールドの詳細を見る"><img src="images/works/pdf-35.jpg"
                                             alt="3DKフィールドの制作実績" width="1600" height="900" loading="lazy"></a>
-                                    <div class="p-home-selected__item-box">
+                                    <div class="work-card__content">
                                         <p class="portfolio-work-role">UIデザイン作成</p>
-                                        <h3 class="p-home-selected__item-title">3DKフィールド</h3>
-                                        <p class="p-home-selected__item-text">
+                                        <h3 class="work-card__title">3DKフィールド</h3>
+                                        <p class="work-card__description">
                                             建設業界の生産性向上を目指す、建設DXのプロジェクト。建築工事の生産プロセスを支えるPC向けUIデザインを担当しました。</p>
-                                        <div class="p-home-selected__item-button"><a
-                                                href="selected/3dk-field/index.html" class="c-link-button"><span
-                                                    class="c-link-button__text">詳しく見る</span><span
-                                                    class="c-link-button__round">→</span></a></div>
+                                        <div class="work-card__action"><a
+                                                href="selected/3dk-field/index.html" class="detail-link"><span
+                                                    class="detail-link__text">詳しく見る</span><span
+                                                    class="detail-link__round">→</span></a></div>
                                     </div>
                                 </article>
                             </div>
                         </section>
                         <section class="portfolio-work-group" aria-labelledby="work-group-6">
-                            <h2 class="c-title portfolio-group-title" id="work-group-6"><span
-                                    class="c-title-main u-medium">自主制作作品</span></h2>
-                            <div class="p-home-selected__items">
+                            <h2 class="section-heading portfolio-group-title" id="work-group-6"><span
+                                    class="section-heading-text text-medium">自主制作作品</span></h2>
+                            <div class="work-list">
                                 <!-- 編集: 音声SNSアプリ「Voicom」 -->
-                                <article class="p-home-selected__item portfolio-work">
-                                    <a class="p-home-selected__item-image" href="selected/voicom/index.html"
+                                <article class="work-card portfolio-work">
+                                    <a class="work-card__visual" href="selected/voicom/index.html"
                                         aria-label="音声SNSアプリ「Voicom」の詳細を見る"><img src="images/works/pdf-38.jpg"
                                             alt="音声SNSアプリ「Voicom」の制作実績" width="1600" height="900" loading="lazy"></a>
-                                    <div class="p-home-selected__item-box">
+                                    <div class="work-card__content">
                                         <p class="portfolio-work-role">自主制作・サービス企画・UIデザイン</p>
-                                        <h3 class="p-home-selected__item-title">音声SNSアプリ「Voicom」</h3>
-                                        <p class="p-home-selected__item-text">
+                                        <h3 class="work-card__title">音声SNSアプリ「Voicom」</h3>
+                                        <p class="work-card__description">
                                             「音声で想いを伝える」をテーマにしたSNSアプリ。誰かの発信が、新しい価値観や気づきにつながる体験を目指して企画・デザインしました。</p>
-                                        <div class="p-home-selected__item-button"><a href="selected/voicom/index.html"
-                                                class="c-link-button"><span
-                                                    class="c-link-button__text">詳しく見る</span><span
-                                                    class="c-link-button__round">→</span></a></div>
+                                        <div class="work-card__action"><a href="selected/voicom/index.html"
+                                                class="detail-link"><span
+                                                    class="detail-link__text">詳しく見る</span><span
+                                                    class="detail-link__round">→</span></a></div>
                                     </div>
                                 </article>
                             </div>
@@ -313,37 +220,37 @@
                 </section>
 
                 <!-- 編集: 自己紹介と3枚のスキルカード -->
-                <section class="p-home-about">
-                    <div class="p-home-about__sticky">
-                        <div class="p-home-about__sticky-box">
-                            <h2 class="c-title">
-                                <span class="c-title-number">02 / ABOUT</span>
-                                <span class="c-title-main u-medium">私について</span>
+                <section class="expertise">
+                    <div class="expertise__sticky">
+                        <div class="expertise__sticky-box">
+                            <h2 class="section-heading">
+                                <span class="section-heading-label">02 / ABOUT</span>
+                                <span class="section-heading-text text-medium">私について</span>
                             </h2>
-                            <p class="p-home-about__sticky-text" data-text-container aria-hidden="true">
-                                <span data-text-hide>
-                                    <span data-text-show>WEB・UI/UXデザイナーとして</span>
+                            <p class="expertise__sticky-text" aria-hidden="true">
+                                <span>
+                                    <span>WEB・UI/UXデザイナーとして</span>
                                 </span>
-                                <span data-text-hide>
-                                    <span data-text-show>活動しています。</span>
+                                <span>
+                                    <span>活動しています。</span>
                                 </span>
-                                <span data-text-hide>
-                                    <span data-text-show>課題整理からUI設計、</span>
+                                <span>
+                                    <span>課題整理からUI設計、</span>
                                 </span>
-                                <span data-text-hide>
-                                    <span data-text-show>デザインシステムの構築まで</span>
+                                <span>
+                                    <span>デザインシステムの構築まで</span>
                                 </span>
-                                <span data-text-hide>
-                                    <span data-text-show>一貫して取り組んでいます。</span>
+                                <span>
+                                    <span>一貫して取り組んでいます。</span>
                                 </span>
                             </p>
-                            <span class="u-sr">UI／Webデザイナーとして活動しています。課題整理からUI設計、デザインシステムの構築まで一貫して取り組んでいます。</span>
+                            <span class="sr-only">UI／Webデザイナーとして活動しています。課題整理からUI設計、デザインシステムの構築まで一貫して取り組んでいます。</span>
                         </div>
                     </div>
-                    <div class="p-home-about__card">
-                        <article class="p-home-about__card-body service-card">
-                            <p class="p-home-about__card-number">01</p>
-                            <div class="p-home-about__card-stage" role="img" aria-label="画面サイズに合わせてレイアウトが切り替わるアニメーション">
+                    <div class="expertise__card">
+                        <article class="expertise__card-body service-card">
+                            <p class="expertise__card-number">01</p>
+                            <div class="expertise__card-stage" role="img" aria-label="画面サイズに合わせてレイアウトが切り替わるアニメーション">
                                 <div class="service-motion service-motion--ui" aria-hidden="true">
                                     <div class="service-browser">
                                         <div class="service-browser-bar"><i></i><i></i><i></i></div>
@@ -364,15 +271,15 @@
                                     <div class="service-motion-caption"><span>画面設計</span><span>使いやすい体験へ</span></div>
                                 </div>
                             </div>
-                            <div class="p-home-about__card-box">
-                                <h3 class="p-home-about__card-title">WEB・UI/UXデザイン</h3>
+                            <div class="expertise__card-box">
+                                <h3 class="expertise__card-title">WEB・UI/UXデザイン</h3>
                             </div>
                         </article>
                     </div>
-                    <div class="p-home-about__card">
-                        <article class="p-home-about__card-body service-card p-home-about__card-body--even">
-                            <p class="p-home-about__card-number">02</p>
-                            <div class="p-home-about__card-stage" role="img"
+                    <div class="expertise__card">
+                        <article class="expertise__card-body service-card expertise__card-body--even">
+                            <p class="expertise__card-number">02</p>
+                            <div class="expertise__card-stage" role="img"
                                 aria-label="共通のルールから部品を組み合わせて画面を構築するアニメーション">
                                 <div class="service-motion service-motion--system" aria-hidden="true">
                                     <div class="service-library">
@@ -394,15 +301,15 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="p-home-about__card-box">
-                                <h3 class="p-home-about__card-title">デザインシステムの構築</h3>
+                            <div class="expertise__card-box">
+                                <h3 class="expertise__card-title">デザインシステムの構築</h3>
                             </div>
                         </article>
                     </div>
-                    <div class="p-home-about__card">
-                        <article class="p-home-about__card-body service-card">
-                            <p class="p-home-about__card-number">03</p>
-                            <div class="p-home-about__card-stage" role="img" aria-label="目的から情報を分類し、導線をつなぐアニメーション">
+                    <div class="expertise__card">
+                        <article class="expertise__card-body service-card">
+                            <p class="expertise__card-number">03</p>
+                            <div class="expertise__card-stage" role="img" aria-label="目的から情報を分類し、導線をつなぐアニメーション">
                                 <div class="service-motion service-motion--ia" aria-hidden="true">
                                     <svg class="service-map-lines" viewBox="0 0 320 230" preserveAspectRatio="none"
                                         fill="none">
@@ -420,12 +327,10 @@
                                     <div class="service-motion-caption"><span>情報を整理する</span><span>迷わない導線へ</span></div>
                                 </div>
                             </div>
-                            <div class="p-home-about__card-box">
-                                <h3 class="p-home-about__card-title">情報設計</h3>
+                            <div class="expertise__card-box">
+                                <h3 class="expertise__card-title">情報設計</h3>
                             </div>
                         </article>
-                    </div>
-                    <div class="p-home-about__block">
                     </div>
                 </section>
 
@@ -433,38 +338,38 @@
             </div>
 
             <!-- 編集: メールアドレス・SNS・フッター見出し -->
-            <footer class="l-footer">
-                <div class="l-footer__grid">
-                    <ul class="l-footer__ul l-footer__ul01">
-                        <li class="l-footer__li-main">お問い合わせ</li>
-                        <li class="l-footer__mail">
+            <footer class="site-footer">
+                <div class="site-footer__content">
+                    <ul class="site-footer__group site-footer__contact">
+                        <li class="site-footer__label">お問い合わせ</li>
+                        <li class="site-footer__email">
                             <a href="mailto:yoshino.takahiro01@gmail.com">yoshino.takahiro01@gmail.com</a>
                         </li>
                     </ul>
-                    <ul class="l-footer__ul l-footer__ul02">
-                        <li class="l-footer__li-main">メニュー</li>
-                        <li class="l-footer__li">
+                    <ul class="site-footer__group site-footer__navigation">
+                        <li class="site-footer__label">メニュー</li>
+                        <li class="site-footer__item">
                             <a href="index.html">トップ</a>
                         </li>
-                        <li class="l-footer__li">
+                        <li class="site-footer__item">
                             <a href="about/index.html">私について</a>
                         </li>
-                        <li class="l-footer__li">
+                        <li class="site-footer__item">
                             <a href="selected/index.html">制作実績</a>
                         </li>
 
                     </ul>
                 </div>
-                <p class="l-footer__big-type">portfolio</p>
+                <p class="site-footer__wordmark">portfolio</p>
             </footer>
         </main>
     </div>
-    <div class="transition-filter">
-    </div>
+    
     <script defer src="js/ripple-texture.js"></script>
     <script defer src="js/ripple-hero.js"></script>
-    <script defer src="js/animation-runtime.js">
-    </script>
+    <script defer src="js/scroll-motion.js"></script>
+    <script defer src="js/opening-video.js"></script>
+    <script defer src="js/site.js"></script>
 </body>
 
 </html>
