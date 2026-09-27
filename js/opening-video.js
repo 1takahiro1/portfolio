@@ -27,7 +27,7 @@
       dialog.className = 'site-opening';
       dialog.setAttribute('aria-label', 'ポートフォリオのオープニング映像');
       dialog.innerHTML = `
-        <video class="site-opening__video" autoplay muted playsinline preload="auto" aria-label="UIデザインを形にするオープニング映像"></video>
+        <video class="site-opening__video" playsinline preload="auto" aria-label="UIデザインを形にするオープニング映像"></video>
         <div class="site-opening__toolbar">
           <div class="site-opening__playback">
             <button type="button" data-intro-resume hidden>再生</button>
@@ -91,14 +91,23 @@
         if (document.hidden && started && !closing) video.pause();
       }
       function onPageHide() { finish(true); }
-      async function start(withSound) {
+      async function start(withSound, allowMutedFallback = false) {
         if (pending || closing) return;
         pending = true;
         video.muted = !withSound;
+        syncControls();
         showWaiting();
         try {
-          // 初回はミュートで即時再生。音声は利用者がボタンを押して有効にする。
-          await video.play();
+          // 音声付きの自動再生を優先し、ブラウザに拒否された場合だけ無音で再試行。
+          // autoplay属性との二重起動を避け、再生開始はこの処理にまとめる。
+          try {
+            await video.play();
+          } catch (error) {
+            if (closing || !allowMutedFallback || !withSound || error.name !== 'NotAllowedError' || video.error) throw error;
+            video.muted = true;
+            syncControls();
+            await video.play();
+          }
           if (closing) { video.pause(); return; }
           started = true;
           dialog.classList.add('is-playing');
@@ -132,7 +141,7 @@
       document.body.append(dialog);
       window.dispatchEvent(new Event('portfolio:opening-open'));
       document.documentElement.classList.add('has-site-opening');
-      try { dialog.showModal(); start(false); }
+      try { dialog.showModal(); start(true, true); }
       catch { finish(true); }
     });
   };
